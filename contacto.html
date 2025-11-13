@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="stylesheet" type="text/css" href="styles/styles.css" media="screen">
+</head>
+<body>
+  <header class="contendor_header">
+    <a href="index.html" id="volver">← Volver atrás</a>
+    <h1>Contacto:</h1>
+  </header>
+
+  <main>
+    <div id="contenedor_contacto">
+      <div id="form_1">
+        <form>
+          <label for="nombre">Nombre (requerido):</label>
+          <input id="nombre" name="nombre" type="text" maxlength="20" required>
+
+          <label for="apellido">Apellido :</label>
+          <input id="apellido" name="apellido" type="text" maxlength="20">
+
+          <label for="email">Email (requerido):</label>
+          <input id="email" name="email" type="email" required>
+
+          <label for="telefono">Teléfono:</label>
+          <input id="telefono" name="telefono" type="tel" placeholder="Ingrese su teléfono" autocomplete="tel">
+
+          <label for="edad">Edad:</label>
+          <input id="edad" name="edad" type="number" min="16" max="120" step="1" inputmode="numeric">
+
+          <label for="direccion">Dirección:</label>
+          <textarea id="direccion" name="direccion"></textarea>
+
+          <label for="provincia">Provincia:</label>
+          <input id="provincia" name="provincia" type="text" list="provincias">
+          <datalist id="provincias">
+            <option value="Neuquen"></option>
+            <option value="Rio Negro"></option>
+            <option value="Chubut"></option>
+            <option value="Santa Cruz"></option>
+            <option value="Tierra del Fuego"></option>
+          </datalist>
+
+          <label for="cp">Código Postal:</label>
+          <input id="cp" name="codigo_postal" type="text" pattern="^[A-Za-z]\d{4}[A-Za-z]{3}$" placeholder="A1234ABC" minlength="8" maxlength="8">
+        </form>
+      </div>
+      <article class="bio-texto">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+  <div id="texto-extra">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam...</p>
+    <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim...</p>
+  </div>
+  <button id="leer-mas">Leer más</button>
+</article>
+      <fieldset id="met_preferido_contacto">
+        <legend>Método Preferido de contacto:</legend>
+        <input type="radio" id="correo_electronico" name="met_contacto" value="correo_electronico" checked>
+        <label for="correo_electronico">Correo electrónico</label>
+
+        <input type="radio" id="correo_postal" name="met_contacto" value="correo_postal">
+        <label for="correo_postal">Correo postal</label>
+
+        <input type="radio" id="telefono_contacto" name="met_contacto" value="telefono">
+        <label for="telefono_contacto">Teléfono</label>
+      </fieldset>
+
+      <fieldset id="tipo_suscripcion">
+        <legend>Tipo de suscripción:</legend>
+        <input type="checkbox" id="noticias" name="suscripcion1" value="noticias">
+        <label for="noticias">Noticias</label>
+
+        <input type="checkbox" id="Promociones" name="suscripcion2" value="Promociones">
+        <label for="Promociones">Promociones</label>
+
+        <input type="checkbox" id="Alertas" name="suscripcion3" value="Alertas">
+        <label for="Alertas">Alertas</label>
+
+        <input type="checkbox" id="Eventos" name="suscripcion4" value="Eventos">
+        <label for="Eventos">Eventos</label>
+      </fieldset>
+
+      <button type="submit">Cargar</button>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Campo</th>
+            <th>Valor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Nombre</td><td></td></tr>
+          <tr><td>Apellido</td><td></td></tr>
+          <tr><td>Email</td><td></td></tr>
+          <tr><td>Teléfono</td><td></td></tr>
+          <tr><td>Edad</td><td></td></tr>
+          <tr><td>Dirección</td><td></td></tr>
+          <tr><td>Provincia</td><td></td></tr>
+          <tr><td>Código Postal</td><td></td></tr>
+          <tr><td>Método preferido de contacto</td><td></td></tr>
+          <tr><td>Tipo de suscripción</td><td></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer>
+    <p>Reservados todos los derechos© 2025<br>Universidad de Comahue<br>Nodo General Conesa<br>Libertad y Mitre</p>
+  </footer>
+
+  <a href="#" class="btn-subir" title="Volver arriba">↑</a>
+  <script src="script.js"></script>
+
+</body>
+</html>
