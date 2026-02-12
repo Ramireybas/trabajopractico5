@@ -64,7 +64,7 @@
         <button id="leer-mas" type="button">Leer más</button>
       </article>
 
-      <!-- Método de contacto (envuelto en form como en el código correcto) -->
+      <!-- Método de contacto -->
       <form id="form_contacto">
         <fieldset id="met_preferido_contacto">
           <legend>Método Preferido de contacto:</legend>
@@ -80,21 +80,21 @@
         </fieldset>
       </form>
 
-      <!-- Suscripciones (envuelto en form y botón submit correcto) -->
+      <!-- Suscripciones -->
       <form id="form_suscripciones">
         <fieldset id="tipo_suscripcion">
           <legend>Tipo de suscripción:</legend>
 
-          <input type="checkbox" id="noticias" name="suscripcion1" value="noticias">
+          <input type="checkbox" id="noticias" name="suscripciones[]" value="noticias">
           <label for="noticias">Noticias</label>
 
-          <input type="checkbox" id="Promociones" name="suscripcion2" value="Promociones">
+          <input type="checkbox" id="Promociones" name="suscripciones[]" value="Promociones">
           <label for="Promociones">Promociones</label>
 
-          <input type="checkbox" id="Alertas" name="suscripcion3" value="Alertas">
+          <input type="checkbox" id="Alertas" name="suscripciones[]" value="Alertas" checked>
           <label for="Alertas">Alertas</label>
 
-          <input type="checkbox" id="Eventos" name="suscripcion4" value="Eventos">
+          <input type="checkbox" id="Eventos" name="suscripciones[]" value="Eventos">
           <label for="Eventos">Eventos</label>
         </fieldset>
 
