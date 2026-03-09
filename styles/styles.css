@@ -3,18 +3,16 @@
     margin: 0;
     text-decoration: none;
     list-style: none;
-    
-
 }
+
 body {
  font-family:Arial,Helvetica,sans-serif;
 }
 
 main{
-
-    margin-left: 100px;
-    padding: 20px;
-    margin-top: 50px;   
+  margin-left: 100px;
+  padding: 20px;
+  margin-top: 130px; /* evita que el header tape el contenido */
 }
 
 p{
@@ -28,15 +26,17 @@ h1{
     margin:5px;
     padding: 5px;
     text-align: center;
-    }
+}
+
 @keyframes myAnimation {
   from {background-color: #0061a9;}
   to {background-color: yellow;}
-
 }
+
 #titulo_index:hover {
   animation: myAnimation 2s infinite;
 }
+
 h2{
     text-align: center;
     margin: 20px;
@@ -73,11 +73,11 @@ h2{
 #index-link { 
     font-weight: bold;
     color: white;   
-    text-decoration: none;
     border: solid rgb(255, 255, 255) 2px;
     padding: 10px;
     margin-right: 100px;
 }
+
 #about-link {
     font-size: 20px;
     font-weight: bold;
@@ -96,13 +96,16 @@ h2{
     margin-right: 100px;
 }
 
-
-
 header {
-height: auto;
- color:white;
- margin-right: auto;
- margin-left: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: auto;
+  color:white;
+  margin-right: auto;
+  margin-left: auto;
 }       
 
 nav{
@@ -114,15 +117,13 @@ nav{
     height: 50px;
     padding: .5rem 4%;
     text-align: center;
-
-    
 }   
 
 footer{
- 
     text-align: center;
     padding: 40px;
 }       
+
 .imagen_perfil {
     width: 25%;
     display: block;
@@ -147,15 +148,14 @@ textarea::placeholder {
 
 input:focus::placeholder,
 textarea:focus::placeholder {
-  opacity: 0;            /* o color: transparent; */
+  opacity: 0;
 }
-
-
 
 #form_1 {
-  max-width: 480px;        /* ancho de la maqueta */
-  margin: 0 0 24px 10px;   /* alineado a la izquierda como en la imagen */
+  max-width: 480px;
+  margin: 0 0 24px 10px;
 }
+
 #form_1 label {
   display: block;
   margin: 10px 0 4px;
@@ -172,19 +172,24 @@ textarea:focus::placeholder {
   border: 1px solid #bfbfbf;
   border-radius: 2px;
 }
+
 #form_1 textarea {
   min-height: 80px;
   resize: vertical;
 }
+
 #form_1 fieldset {
   margin-top: 12px;
   padding: 10px;
   border: 1px solid #bfbfbf;
   border-radius: 2px;
 }
-#form_1 legend {
+
+#form_1 legend,
+legend{
   padding: 0 6px;
   font-weight: 600;
+  margin-bottom: 15px;
 }
 
 #form_1 input[type="radio"] + label,
@@ -193,6 +198,7 @@ textarea:focus::placeholder {
   margin-left: 4px;
   margin-right: 18px;
 }
+
 #form_1 button[type="submit"] {
   margin-top: 12px;
   padding: 6px 12px;
@@ -234,10 +240,6 @@ textarea:focus::placeholder {
     margin-bottom: 30px;
 }
 
-legend{
-    margin-bottom: 15px;
-}
-
 #volver{
   position: absolute;
   left: 16px;
@@ -249,9 +251,9 @@ legend{
   border-radius: 8px;
   background: rgba(255,255,255,.12);
   color: #fff;
-  text-decoration: none;
   font-weight: 600;
 }
+
 #volver:hover{ background: rgba(255,255,255,.22); }
 #volver:active{ transform: translateY(-50%) scale(.98); }
 
@@ -264,9 +266,8 @@ legend{
     border: solid rgb(0, 0, 0) 2px;
     color: white;
     background-color: #0061a9;
-
-
 }
+
 #header_index {
     display: flex; 
     align-items: center;
@@ -277,7 +278,7 @@ legend{
 
 .header-content {
     display: flex;
-     background-color: #0061a9;
+    background-color: #0061a9;
     align-items: center;
     justify-content: center;
     gap: 15px;
@@ -289,18 +290,6 @@ legend{
 
 .header-content .LogoComahue {
     order: 2;
-}
-
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
-main {
-  margin-top: 130px; /* evita que el header tape el contenido */
 }
 
 /* ----- BOTÓN VOLVER ARRIBA ----- */
@@ -316,7 +305,6 @@ main {
   height: 50px;
   text-align: center;
   line-height: 50px;
-  text-decoration: none;
   box-shadow: 0 4px 6px rgba(0,0,0,0.3);
   transition: background 0.3s;
 }
@@ -324,4 +312,3 @@ main {
 .btn-subir:hover {
   background-color: #004b82;
 }
-
